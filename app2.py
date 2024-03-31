@@ -4,11 +4,37 @@ from textsummarizer.pipeline.prediction import PredictionPipeline
 # Initialize the PredictionPipeline
 obj = PredictionPipeline()
 
+# Function to create a download link for text
+def get_download_link(text, filename):
+    href = f'<a href="data:text/plain;charset=utf-8,{text}" download="{filename}">Download Summarized Text</a>'
+    return href
+
 # Define the Streamlit app
 def main():
-    
-    st.image("bg1.jpeg", use_column_width=True)
+    # Add CSS to set the background color of the entire app
+    st.markdown(
+        """
+        <style>
+        body {
+            background-color: #f0f2f6; /* Light grey */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
     st.title("Text Summarization")
+    # Set background image
+    st.markdown(
+        """
+        <style>
+        .reportview-container {
+            background: url("https://img.freepik.com/premium-photo/abstract-black-textured-background-with-scratches_130265-12474.jpg")
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
     # Sidebar for user input
     st.sidebar.title("User Input")
@@ -42,12 +68,7 @@ def main():
     st.sidebar.info(
         "This app uses a text summarization model to generate summaries of input text."
     )
-    st.sidebar.info("Developed by Subhaganesh .")
-
-# Function to create a download link for text
-def get_download_link(text, filename):
-    href = f'<a href="data:text/plain;charset=utf-8,{text}" download="{filename}">Download Summary</a>'
-    return href
+    st.sidebar.info("Developed by Subhaganesh.")
 
 # Run the app
 if __name__ == "__main__":

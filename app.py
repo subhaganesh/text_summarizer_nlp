@@ -35,7 +35,8 @@ def main():
         """,
         unsafe_allow_html=True
     )
-
+     
+    st.image('bg1.jpeg', caption='Optional Caption', use_column_width=True)
     # Sidebar for user input
     st.sidebar.title("User Input")
     st.sidebar.write("Enter the text you want to summarize in the text box below.")

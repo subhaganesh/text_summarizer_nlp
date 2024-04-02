@@ -29,7 +29,7 @@ The Text Summarization for conversation is a sophisticated tool designed to extr
 
 
 
-## Installation:
+# Installation:
 
 Look for a file named README.md in the repository. This file usually contains instructions on how to install and use the project. Read through it to find installation instructions specific to the project.
 
@@ -68,12 +68,7 @@ For example, if it's a web application using streamlit, you might run:
 
 
 
-
-
-
-
-
-## Packages Required:
+# Packages Required:
 
 * transformers
 * transformers[sentencepiece]
@@ -98,7 +93,7 @@ For example, if it's a web application using streamlit, you might run:
 * streamlit
 
 
-## Roadmap:
+# Roadmap:
 
 * setup.py
 * template.py 
@@ -125,7 +120,7 @@ __workflows:__
 14. update app.py
 
 
-## Deployment:
+# Deployment:
 
 To deploy this project run
 
@@ -134,7 +129,7 @@ To deploy this project run
 ```
 
 
-## Acknowledgements:
+# Acknowledgements:
 
  - [Krish naik](https://www.linkedin.com/in/naikkrish/)
 
@@ -144,7 +139,7 @@ To deploy this project run
 
 
 
-## Authors:
+# Authors:
 
 - [Subhaganesh](https://github.com/subhaganesh)
 
